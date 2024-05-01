@@ -1,0 +1,81 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+/* DevOps Skills Section Styling */
+.skills-section {
+    margin-top: 30px;
+}
+
+.skills-section h4 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.skills-section h4 i {
+    margin-right: 10px;
+    color: #4a90e2;
+}
+
+.skills-section span {
+    background: #f4f4f4;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.skills-section span:hover {
+    background: #4a90e2;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skills-section span i {
+    margin-right: 5px;
+}
+
+/* Service Icons Enhancement */
+.services-inner-box .ser-icon {
+    margin-bottom: 20px;
+}
+
+.services-inner-box .ser-icon i {
+    color: #4a90e2;
+    transition: all 0.3s ease;
+}
+
+.services-inner-box:hover .ser-icon i {
+    color: #2c5aa0;
+    transform: scale(1.1);
+}
+
+/* Social Links Styling */
+.social-links {
+    padding: 20px 0;
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4a90e2 !important;
+    transform: scale(1.2);
+}
+
+/* GitHub Button Enhancement */
+.sim-btn.btn-hover-new {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sim-btn.btn-hover-new i {
+    font-size: 18px;
+}
