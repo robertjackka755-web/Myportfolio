@@ -1,7 +1,29 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
 
-/* DevOps Skills Section Styling */
+/* Modern Gradient Background for Banner */
+.main-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+    z-index: 1;
+}
+
+.main-banner .heading {
+    position: relative;
+    z-index: 2;
+}
+
+/* Platform Engineering Skills Section Styling */
 .skills-section {
     margin-top: 30px;
 }
@@ -10,49 +32,88 @@
     color: #333;
     font-weight: 600;
     margin-bottom: 20px;
+    font-size: 1.3em;
 }
 
 .skills-section h4 i {
     margin-right: 10px;
-    color: #4a90e2;
+    color: #667eea;
 }
 
-.skills-section span {
-    background: #f4f4f4;
-    padding: 8px 15px;
-    border-radius: 5px;
+.skill-badge {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 10px 18px;
+    border-radius: 25px;
     display: inline-block;
     margin: 5px;
     font-size: 14px;
     color: #333;
     transition: all 0.3s ease;
-    border: 1px solid #e0e0e0;
+    border: 2px solid transparent;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.skills-section span:hover {
-    background: #4a90e2;
+.skill-badge:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+    border-color: #667eea;
 }
 
-.skills-section span i {
-    margin-right: 5px;
+.skill-badge i {
+    margin-right: 6px;
+    font-size: 16px;
 }
 
 /* Service Icons Enhancement */
+.services-inner-box {
+    transition: all 0.3s ease;
+    padding: 30px 20px;
+    border-radius: 10px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.services-inner-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
 .services-inner-box .ser-icon {
     margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    margin: 0 auto 20px;
 }
 
 .services-inner-box .ser-icon i {
-    color: #4a90e2;
+    color: #fff;
     transition: all 0.3s ease;
+    font-size: 36px;
 }
 
-.services-inner-box:hover .ser-icon i {
-    color: #2c5aa0;
-    transform: scale(1.1);
+.services-inner-box:hover .ser-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.services-inner-box h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.services-inner-box p {
+    color: #666;
+    line-height: 1.8;
 }
 
 /* Social Links Styling */
@@ -62,11 +123,12 @@
 
 .social-links a {
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .social-links a:hover {
-    color: #4a90e2 !important;
-    transform: scale(1.2);
+    color: #667eea !important;
+    transform: scale(1.2) rotate(5deg);
 }
 
 /* GitHub Button Enhancement */
@@ -74,8 +136,161 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.sim-btn.btn-hover-new:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
 .sim-btn.btn-hover-new i {
     font-size: 18px;
 }
+
+/* Section Title Enhancement */
+.section-title h3 {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* About Section Enhancement */
+.message-box h2 {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.message-box h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.message-box p {
+    color: #555;
+    line-height: 1.9;
+    font-size: 1.05em;
+    margin-bottom: 20px;
+}
+
+/* Navbar Brand Enhancement */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+    color: #667eea;
+}
+
+/* Banner Heading Enhancement */
+.main-banner .heading h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.main-banner .heading p {
+    color: rgba(255,255,255,0.95);
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.main-banner .heading h3 {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Contact Section Enhancement */
+#contact {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-banner .heading h1 {
+        font-size: 2.5em;
+    }
+    
+    .section-title h3 {
+        font-size: 2em;
+    }
+    
+    .services-inner-box {
+        margin-bottom: 30px;
+    }
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services-inner-box {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.services-inner-box:nth-child(1) { animation-delay: 0.1s; }
+.services-inner-box:nth-child(2) { animation-delay: 0.2s; }
+.services-inner-box:nth-child(3) { animation-delay: 0.3s; }
+.services-inner-box:nth-child(4) { animation-delay: 0.4s; }
+.services-inner-box:nth-child(5) { animation-delay: 0.5s; }
+.services-inner-box:nth-child(6) { animation-delay: 0.6s; }
